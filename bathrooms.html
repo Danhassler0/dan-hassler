@@ -9,13 +9,14 @@
     </style>
   </head>
   <body>
+    <h1>Philly Bathrooms</h1>
     <div id="map">
       <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
     </div>
     <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
     <script>
       var map = L.map('map').setView([0, 0], 1);
-      L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=lHV8vRAw3DofDiKkfcRC',{
+      L.tileLayer('https://api.maptiler.com/maps/openstreetmap/tiles.json?key=lHV8vRAw3DofDiKkfcRC',{
         tileSize: 512,
         zoomOffset: -1,
         minZoom: 1,
