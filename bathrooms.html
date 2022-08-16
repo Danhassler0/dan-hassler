@@ -9,7 +9,6 @@
     </style>
   </head>
   <body>
-    <h1>Philly Bathrooms</h1>
     <div id="map">
       <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
     </div>
@@ -23,7 +22,12 @@
         attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
         crossOrigin: true
       }).addTo(map);
+
+
       var marker = L.marker([51.5, -0.09]).addTo(map);
+
+
+      marker.bindPopup("<b> Hey There! </b><br> I am a marker.").openPopup();
 
     </script>
   </body>
