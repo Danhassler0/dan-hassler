@@ -10,20 +10,19 @@
   </head>
   <body>
     <h1>Philadelphia Public Bathrooms</h1>
-     <div id="map"></div>
-     <script>
-     var map = L.map('map').setView([51.505, -0.09], 13);
-
-     L.tileLayer('https://api.maptiler.com/maps/2c4a9f77-f50f-4f6c-8a16-98bb440ff3bb/?key=lHV8vRAw3DofDiKkfcRC#13.5/39.95086/-75.16297', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-
-var marker = L.marker([51.5, -0.09]).addTo(map);
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
-
-     </script>
+    <div id="map">
+          <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+        </div>
+        <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
+        <script>
+          var map = L.map('map').setView([0, 0], 1);
+          L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=lHV8vRAw3DofDiKkfcRC',{
+            tileSize: 512,
+            zoomOffset: -1,
+            minZoom: 1,
+            attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+            crossOrigin: true
+          }).addTo(map);
+        </script>
   </body>
 </html>
