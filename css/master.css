@@ -50,3 +50,6 @@ body, html {
     background-attachment: scroll;
   }
 }
+
+
+#map { height: 180px; }
