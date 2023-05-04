@@ -16,7 +16,7 @@
 
 /* Style for the side nav for shopping departments */
 .sidenav {
-  height: 100%;
+  height: 90%;
   width: 200px;
   position: fixed;
   z-index: 1;
