@@ -15,14 +15,9 @@
 }
 
 /* Style for the side nav for shopping departments */
-.sidenav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.sidenav {
   width: 15%;
+  float: left;
 }
 
 /* Change the color of links on hover */
