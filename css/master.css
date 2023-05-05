@@ -4,6 +4,16 @@
   overflow: hidden;
 }
 
+.topnav1 {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav2 {
+  background-color: #333;
+  overflow: hidden;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -66,8 +76,20 @@
   color: rgb(218, 104, 104);
 }
 
+/* Change the color of links on hover */
+.topnav1 a:hover {
+  background-color: #ddd;
+  color: rgb(218, 104, 104);
+}
+
 /* Add a color to the active/current link */
 .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav1 a.active {
   background-color: #04AA6D;
   color: white;
 }
